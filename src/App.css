@@ -1,0 +1,90 @@
+body,
+div {
+  background-color: #FAFAFA;
+  box-sizing: border-box;
+}
+
+.App {
+  display: inline-block;
+  width: 90%;
+  align-content: center;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 5%;  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.inputLabel {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.appBtn {
+  padding: 12px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  display: inline-block;
+}
+
+.networkImg {
+  border-radius: 50px;
+  transition: 1s;
+  width: 75px;
+  height: 75px;
+}
+
+
+.loadingIcon {
+  width: auto;
+  height: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  display: flex;
+  position: relative;
+  color: #000;
+}
+
+.loadingIcon span {
+  margin: 0 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: blue;
+  animation: 1s animate infinite;
+}
+
+.loadingIcon h2 {
+  color: #000000;
+  font-size: 6em;
+  margin-right: 0.3em;
+}
+
+@keyframes animate {
+  20% {
+    background-color: #282c34;
+  }
+  50% {
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  80% {
+    background-color: #ffffff;
+  }
+}
